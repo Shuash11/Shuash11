@@ -1,0 +1,210 @@
+*{
+    text-decoration: none;
+    padding: 0%;
+   
+}
+body{
+
+   background-color: rgb(255, 255, 255);
+ height: 100vh;
+   overflow: hidden;
+
+   
+}
+.container1
+{
+    background-image: linear-gradient(to right,rgb(3, 100, 124) ,rgb(211, 63, 211));
+
+height: 55px;
+display: flex;
+text-align: center;
+margin-top: 5px;
+}
+.text
+{
+    color: rgb(255, 248, 248);
+    float: left;
+    font-family: 'Trebuchet MS';
+}
+.J
+{
+    display: flex;
+    margin-left: 10px;
+
+
+}
+.bars
+{
+  display: flex;
+ justify-content: end;
+ height: 100%;
+ width: 100%;
+ align-items: center;
+}
+.texts
+{
+display: flex;
+flex-direction:  row;
+text-indent: 10px;
+align-items: center;
+margin-right: 10px;
+}
+a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana ;
+}
+.text3
+{
+display: flex;
+flex-direction: column;
+font-size: 90px;
+color: rgb(40, 54, 21);
+
+
+
+
+}
+.another2
+{
+margin-top: 30px;
+
+}
+.welcome{
+text-align: center;
+padding: 0px;
+font-size: 50px;
+margin-top: 5px;
+font-family: Verdana ;
+animation: motion 2s infinite;
+
+letter-spacing: 20px;
+
+
+}
+
+@keyframes motion {
+    
+    0%,
+
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+.today
+{
+    text-align: center;
+    justify-self: first baseline;
+    font-size: 50px;
+    margin-top: -160px;
+    letter-spacing: 2px;
+}a:hover
+{
+   color: rgb(0, 0, 0);
+   border-bottom:  1px solid black;
+    font-size: 20px;
+    transition: .8s;
+}
+
+.round
+{
+    margin-top: 20px;
+   
+    display:flex ;
+    justify-content: center;
+  align-items: center;
+    border:solid 2px;
+    background-image: linear-gradient(to right,rgb(3, 100, 124) ,rgb(211, 63, 211));
+    animation:spin 3s infinite;
+    width:300px ;
+    height: 300px;
+ 
+}
+.bobo
+{
+    display: flex;
+    justify-content: center;
+   
+}
+.yo
+{
+  color: rgb(243, 240, 255);
+ 
+}
+
+
+@keyframes spin
+{
+0%,
+
+100%
+{
+    transform:  rotate(360deg);
+border-radius: 30%;
+}
+75%
+{
+    transform:  rotate(270deg);
+border-radius: 30%;
+}
+50%
+{
+    transform: rotate(180deg);
+border-radius: 50%;
+}
+25%
+{
+transform: rotate(90deg);
+border-radius: 50%;
+font-size: 50px;
+}
+}
+
+.ball
+{
+    margin-top: 20px;
+    background-color: rgb(91, 132, 209);
+    border: solid 2px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+
+
+@keyframes mymove {
+    from {left: -1300px;}
+    to {left: 2000px;}
+
+   100%
+   {
+    transform: translateX(0px);
+    
+   }
+   50%
+   {
+    transform: translateX(5px);
+    
+   }
+  
+    
+  }
+  .line
+  {
+    display: flex;
+   column-gap: 25px;
+   justify-content: center;
+  
+  }
+  .c{
+    text-align: center;
+   font-size: 30px;
+   color: rgb(202, 225, 231);
+   text-shadow: 0 0 16px black ;
+   padding: 5px;
+  }

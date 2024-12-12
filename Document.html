@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///E:/BARIMBAO/html%20css%20barimbao/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./Document_files/loginfinal.css">
+
+
+<link href="./Document_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="./Document_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function Login() {
+        var username = document.getElementById("user").value;
+        var password = document.getElementById("pass").value;
+        if (username == "joashua" && password == "nope") {
+            window.location.href = "form2final.html";
+            alert("succesfully loged in");
+        }
+        else {
+            alert("incorrect to username or password");
+        }
+    }
+    function showpass(checkbox) {
+        var checkbox = document.getElementById("check");
+        var password = document.getElementById("pass");
+        if (checkbox.checked == true) {
+            password.setAttribute("type", "text");
+        }
+        else {
+            password.setAttribute("type", "password");
+        }
+    }
+</script>
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="whole mb-3 align-items-center" id="con">
+        <div class="container">
+            <div class="card bg-info shadow ">
+                <div style="font-size: 50px;font-family: Verdana; color:rgb(8, 8, 8);" class="card2 card-header">
+                    LOGIN</div>
+                <div class="crued card-body d-flex flex-column px-5">
+                    <div class="inputs form-floating mb-3">
+                        <input type="email" class="username form-control" id="user" placeholder="username">
+                        <label for="user">username</label>
+                    </div>
+                    <div class="inputs form-floating">
+                        <input type="password" class="password form-control" id="pass" placeholder="Password">
+                        <label for="pass">Password</label>
+                    </div>
+                    <div class="checkbox d-flex flex-start w-full">
+                        <input type="checkbox" id="check" class="me-2" onclick="showpass(this)">
+                        <label for="checkbox">show password</label>
+                    </div>
+
+                    <div class="btn2">
+                        <button type="button" class="btn btn-primary" onclick="Login()">LOGIN</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text">
+            <h1>NEW ME</h1>
+        </div>
+    </div>
+
+
+</body></html>

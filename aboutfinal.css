@@ -1,0 +1,248 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+  overflow: hidden;
+   
+}
+img
+{
+   position: relative;
+   width: 30vw;
+    
+    margin-left: 1rem;
+    border-radius: 4rem;
+animation: show 1s ;
+animation: raid 2s infinite;
+
+
+border: 1px solid rgb(134, 153, 156);
+
+}
+.border
+{
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+.container1
+{
+ background-image: linear-gradient(to right,rgb(32, 39, 41) ,rgb(20, 17, 20));
+height: 55px;
+display: flex;
+text-align: center;
+margin-left: 7px;
+margin-right: 7px;
+margin-top: 7px;
+}
+.text
+{
+    color: rgb(255, 248, 248);
+    display: flex;
+    flex: wrap;
+    font-family: 'Trebuchet MS';
+
+}
+.bars
+{
+  display: flex;
+ justify-content: end;
+ height: 100%;
+ width: 100%;
+ align-items: center;
+ margin-right: 10px;
+ word-spacing: 5px;
+}
+.J
+{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.home
+{
+    color: rgb(202, 8, 8);
+    border:  1px solid rgb(175, 10, 10);
+     font-size: 20px;
+     border-radius: 5px;
+     padding: 3px;
+    border-radius: 20%;
+    padding: 3px;
+   background-color: transparent;
+   padding: 7px;
+}
+.ab
+{
+   color: rgb(253, 253, 253);
+   border:  1px solid rgb(175, 10, 10);
+    font-size: 20px;
+    border-radius: 20%;
+    padding: 3px;
+  box-shadow: 1px 1px 15px 1px red;
+   background-color: red;
+   padding: 7px;
+   font-weight: 1000px;
+
+}
+.logout
+{
+    color: rgb(202, 8, 8);
+    border:  1px solid rgb(255, 255, 255);
+     font-size: 20px;
+     border-radius: 5px;
+     padding: 3px;
+   
+    border-radius: 20%;
+    padding: 3px;
+   background-color: transparent;
+   padding: 7px;
+    
+}
+.gal
+{
+    color: rgb(202, 8, 8);
+    border:  1px solid rgb(255, 255, 255);
+     font-size: 20px;
+     border-radius: 5px;
+     padding: 3px;
+   
+    border-radius: 20%;
+    padding: 3px;
+   background-color: transparent;
+   padding: 7px;
+  
+    
+}
+a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana ;
+    text-decoration: none;
+}
+
+
+@keyframes show
+{
+ 0%,
+ 25%
+ {
+margin-left: -200px;
+ }
+ 100%
+ {
+ transform: translateX(25px)
+ 
+ }
+ 
+}
+@keyframes raid
+ {
+    100%
+    {
+        border-radius: 50%;
+    }
+    75%
+    {
+        border-radius: 30%;
+    }
+    50%
+    {
+        border-radius: 20%;
+    }
+    35%
+    {
+        border-radius: 0%;
+        transform: rotate(10deg);
+    } 
+ }
+ 
+.image{
+
+height: 75vw;
+    background-image:url('cardo.avif');
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+
+ 
+}
+.texts:hover
+{
+   cursor: pointer; 
+ 
+}
+
+
+.texttype
+{
+    margin-top: 3vw;                /* Adds space at the top */
+    margin-left: 5vw;                /* Adds space from the left */
+    color: rgb(253, 253, 253);       /* Sets text color */
+            
+    color: rgb(253, 253, 253);
+}
+.nope
+{
+  display: flex;
+flex: wrap;
+    
+}
+.head
+{
+    font-size: 4.5vw; /* Font size based on viewport width (percentage) */
+    background-color: rgb(175, 28, 9);
+    width: fit-content;
+    padding: 2%; /* Padding based on percentage */
+    border: solid 1px rgb(241, 73, 12);
+    border-radius: 3vw;
+    box-shadow: 1px 1px 15px 1px red;
+}
+.body
+{
+    font-size: 3vw;
+    color: rgb(253, 249, 248);
+    opacity: .8;
+}
+.con{
+    margin-bottom:5vw;
+    opacity: .5;
+font-size: 2vw;
+}
+
+
+.logout:hover{
+    background-color: red;
+        box-shadow: 0px 0px 15px 0 red;
+        color: aliceblue;
+}
+
+.home:hover{
+    background-color: red;
+        box-shadow: 0px 0px 15px 0 red;
+        color: aliceblue;
+}
+
+.gal:hover{
+    background-color: red;
+        box-shadow: 0px 0px 15px 0 red;
+        color: aliceblue;
+}
+
+.head:hover{
+    scale: 1.1;
+    transition: 2s;
+   
+}
+.subbody
+{
+    font-size: 39px;
+    opacity: .6;
+}
+.images:hover
+{
+    transform: rotate(2deg) ;
+    scale: 1.1;
+    transition: 2s;
+    cursor: pointer;
+}

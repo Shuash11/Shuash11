@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="bodimage image">
+
+        <div class="container1">
+            <div class="text">
+                <h3 class="J">DASHBOARD</h3>
+            </div>
+
+            <div class="bars">
+                <div class="texts">
+                    <a href="homefinal.html" class="home"> HOME</a>
+                    <a href="gallery.html" class="gal">GALLERY</a>
+                    <a href="aboutfinal.html" class="ab">ABOUT</a>
+                    <a href="login.html" class="logout" onclick="checker()">LOGOUT</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="nope">
+            <div class="border">
+                <img src="welcome.jpg" class="images">
+            </div>
+            <div class="texttype">
+                <p class="po"> <h1 class="head"> WELCOME</h1>
+                    <br>
+                                <h2 class="body"> WHAT CAN I DO FOR YOU TODAY? </h2> <br>
+                                   <div class="forall">
+                                        <div class="rolling">
+                                            
+                                        </div>  
+                                       
+    
+                                    </div>
+            </div>
+     
+
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+<script>
+     function checker() {
+        var r = confirm('are you sure you want to log-out?');
+        if (r == false) {
+            event.preventDefault();
+        }
+        else {
+            window.location.href = "login.html"
+        }
+
+    }
+
+</script>
+</body>
+</html>

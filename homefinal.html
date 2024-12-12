@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="HOMEFINAL.CSS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file:///E:/BARIMBAO/html%20css%20barimbao/final/homefinal.html">
+</head>
+
+<body>
+
+    <div class="bodimage image">
+
+        <div class="container1">
+            <div class="text">
+                <h3 class="J">DASHBOARD</h3>
+            </div>
+
+            <div class="bars">
+                <div class="texts">
+                    <a class="home"> HOME</a>
+                    <a href="gallery.html" class="gal">GALLERY</a>
+                    <a href="aboutfinal.html" class="ab">ABOUT</a>
+                    <a href="dashboard.html" class="logout">DASHBOARD</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="nope">
+            <div class="border">
+                <img class="noter" src="pic.jpg" alt="">
+            </div>
+            <div class="texttype">
+              
+                <h1 class="head"> JOASHUA MARL BARIMBAO</h1>
+                <h2 class="body">A Computer Science Student. <br>
+                    A Tangub City Global College Student. <br>
+                </h2>
+                <h3 class="con">A Developer of this webpage</h3>
+                
+                <br>
+                <div class="tp">
+                    <a href="" class="link">
+                        <img class="pic1" src="phone-call.png" alt="">
+                        <h4 class="num" id="contact">09639201328</h4>
+                    </a>
+                    <a href="https://www.facebook.com/joashuamarl.barimbao" class="link">
+                        <img class="pic2" src="facebook.png" alt="">
+                        <h4 class="num">Joashua Marl Barimbao</h4>
+                    </a>
+                    <a href="" class="link">
+                        <img class="pic3" src="gmail.png" alt="">
+                        <h4 class="num" id="mail">joashuabarimbao10@gmail.com</h4>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+
+        const contactElement = document.querySelector("#contact")
+
+
+        const contact = document.getElementById("contact").innerText;
+
+        contactElement.addEventListener("click", (e) => {
+
+            // Prevent default behavior if needed
+            e.preventDefault();
+
+            // Create a temporary textarea to select and copy the text
+            const textarea = document.createElement("textarea");
+            textarea.value = contact;
+            textarea.value
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+
+            // Optionally, notify the user the text has been copied
+            alert("Text copied to clipboard!");
+        });
+
+    </script>
+    <script>
+        const contactel = document.querySelector("#mail")
+
+
+        const contacter = document.getElementById("mail").innerText;
+
+        contactel.addEventListener("click", (e) => {
+
+            // Prevent default behavior if needed
+            e.preventDefault();
+
+            // Create a temporary textarea to select and copy the text
+            const textarea = document.createElement("textarea");
+            textarea.value = contacter;
+            textarea.value
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+
+            // Optionally, notify the user the text has been copied
+            alert("Text copied to clipboard!");
+        });
+
+    </script>
+</body>
+
+</html>

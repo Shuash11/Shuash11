@@ -1,0 +1,44 @@
+*
+{
+    overflow: hidden;
+}
+body
+{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+.card
+{
+   text-align: center;
+ width: 500px;
+
+ 
+ 
+}
+#user
+{
+    border-radius: 5px;
+}
+#c
+{
+    font-size: 100px;
+}
+.btn
+{
+   width: 400px;
+  padding-top: 10px;
+}
+.label
+{
+font-size: 12px;
+font-weight: 900;
+color: white;
+font-style: italic;
+}
